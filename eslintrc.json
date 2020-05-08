@@ -1,0 +1,48 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "globals": {
+    "document": "readonly",
+    "navigator": "readonly"
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "standard", "standard-react","react-app"],
+  "rules": {
+    "indent": ["error", 2, {"ignoredNodes": [
+      "JSXElement", "JSXElement > *", "JSXAttribute", "JSXIdentifier", "JSXNamespacedName", "JSXMemberExpression", "JSXSpreadAttribute", "JSXExpressionContainer", "JSXOpeningElement", "JSXClosingElement", "JSXText", "JSXEmptyExpression", "JSXSpreadChild"
+    ]}],
+    "quotes": ["error", "single"],
+    "jsx-quotes": ["error", "prefer-single"],
+    "space-before-function-paren": ["error", "always"],
+    "no-unused-vars": "error",
+    "no-console": "off",
+    "semi": [
+      "error",
+      "always"
+    ],
+    "comma-dangle": "error",
+    "react/prop-types": "off",
+    "camelcase": "off",
+    "react/no-unescaped-entities": "warn",
+    "react/jsx-handler-names": "off",
+    "react/jsx-indent": "warn",
+    "react/jsx-closing-tag-location": "warn",
+    "react-hooks/exhaustive-deps": "warn",
+    "prefer-const": "warn",
+    "react/jsx-fragments": ["warn", "element"]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}

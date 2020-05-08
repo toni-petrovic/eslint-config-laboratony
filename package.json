@@ -1,0 +1,91 @@
+{
+  "name": "eslint-config-laboratony",
+  "description": "Laboratony Standard Style - ESLint Shareable Config",
+  "version": "1.0.10",
+  "author": {
+    "name": "laboratony",
+    "email": "devs@laboratony.com",
+    "url": "https://www.laboratony.com"
+  },
+  "bugs": {
+    "url": "https://github.com/toni-petrovic/eslint-config-laboratony/issues"
+  },
+  "devDependencies": {
+    "tape": "4.13.0",
+    "babel-eslint": "10.0.3",
+    "react": "16.12.0",
+    "eslint-plugin-react-hooks": "2.3.0",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.9.0",
+    "eslint-config-react-app": "5.1.0",
+    "eslint-loader": "3.0.3",
+    "eslint-plugin-flowtype": "4.6.0",
+    "eslint-plugin-import": "2.20.0",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-react": "7.18.0",
+    "eslint-plugin-standard": "4.0.1",
+    "eslint-config-standard": "14.1.0",
+    "eslint-config-standard-react": "9.2.0",
+    "eslint-plugin-babel": "5.3.0",
+    "eslint-plugin-node": "11.0.0"
+  },
+  "homepage": "https://github.com/toni-petrovic/eslint-config-laboratony",
+  "keywords": [
+    "laboratony Standard Style",
+    "check",
+    "checker",
+    "code",
+    "code checker",
+    "code linter",
+    "code standards",
+    "code style",
+    "enforce",
+    "eslint",
+    "eslintconfig",
+    "hint",
+    "jscs",
+    "jshint",
+    "lint",
+    "policy",
+    "quality",
+    "simple",
+    "standard",
+    "standard style",
+    "style",
+    "style checker",
+    "style linter",
+    "verify"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "peerDependencies": {
+    "babel-eslint": ">=10.0.3",
+    "eslint-plugin-react-hooks": ">=2.3.0",
+    "eslint": ">=6.8.0",
+    "eslint-config-prettier": ">=6.9.0",
+    "eslint-config-react-app": ">=5.1.0",
+    "eslint-loader": ">=3.0.3",
+    "eslint-plugin-flowtype": ">=4.6.0",
+    "eslint-plugin-import": ">=2.20.0",
+    "eslint-plugin-jsx-a11y": ">=6.2.3",
+    "eslint-plugin-prettier": ">=3.1.2",
+    "eslint-plugin-promise": ">=4.2.1",
+    "eslint-plugin-react": ">=7.18.0",
+    "eslint-plugin-standard": ">=4.0.1",
+    "eslint-config-standard": ">=14.1.0",
+    "eslint-config-standard-react": ">=9.2.0",
+    "eslint-plugin-babel": ">=5.3.0",
+    "eslint-plugin-node": ">=11.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/toni-petrovic/eslint-config-laboratony.git"
+  },
+  "scripts": {
+    "lint": "eslint . --config=eslintrc.json",
+    "test": "npm run lint && tape test/*.js",
+    "test-fix": "npm run lint --fix && tape test/*.js"
+  }
+}
